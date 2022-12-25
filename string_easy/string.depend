@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1670165531 source:c:\users\Александр\onedrive\Рабочий стол\string_easy\string\function_1.cpp
+	"strings.h"
+
+1671964410 c:\users\Александр\onedrive\Рабочий стол\string_easy\string\strings.h
+	<iostream>
+	<string>
+
+1671964429 source:c:\users\Александр\onedrive\Рабочий стол\string_easy\string\main.cpp
+	"strings.h"
+
+1670255814 source:c:\users\Александр\onedrive\Рабочий стол\string_easy\string\function_2.cpp
+	"strings.h"
+
+1671965052 source:c:\users\Александр\onedrive\Рабочий стол\string_easy\string\function_3.cpp
+	"strings.h"
+
