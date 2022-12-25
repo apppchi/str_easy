@@ -21,21 +21,21 @@
     return str1;
  }
 
- string itc_slice_str(string str, int start, int endd){
+ string itc_slice_str(string str, int start, int end){
     char a = str[start];
-    char b = str[endd];
+    char b = str[end];
     int i = itc_len(str);
     string str1 = "";
     if (start >= i ){
         return str;
     }
-    else if (endd > i-1){
+    else if (end > i-1){
         for (int c = start; c <= i; c++){
             str1 = str1 + str[c];
         }
     }
     else {
-        for (int d = start; d <= endd; d++){
+        for (int d = start; d <= end; d++){
             str1 = str1 + str[d];
         }
     }
@@ -45,8 +45,8 @@
  double itc_percent_lower_uppercase(string str){
     char a = str[0];
     int i = 0;
-    int pr = 0;
-    int st = 0;
+    double pr = 0;
+    double st = 0;
     while (a != '\0'){
         a = str[i];
         if (a >= 'A' && a <= 'Z'){
