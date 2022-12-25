@@ -1,4 +1,4 @@
- #include "strings.h"
+ #include "str_easy.h"
 
  string itc_even_place(string str){
     int a = itc_len(str);
