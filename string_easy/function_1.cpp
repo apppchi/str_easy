@@ -1,7 +1,7 @@
 #include "strings.h"
 
 string itc_hello_str(string name){
-    cout << "Hello, " + name;
+    return "Hello, " + name;
 }
 
 long long itc_len(string str){
