@@ -44,3 +44,19 @@ int itc_find_str(string str1, string str2){
     }
     return -1;
 }
+
+string itc_three_str(string str1, string str2, string str3){
+    int i = itc_find_str(str1, str2);
+    int p = 0;
+    long long len3 = itc_len(str3);
+    if (i != -1){
+        for (p = 0; p < len3; p++){
+            str1[i] = str3[p];
+            i++;
+        }
+    }
+    else {
+        return "-1";
+    }
+    return str1;
+}
