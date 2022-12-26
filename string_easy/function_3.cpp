@@ -21,5 +21,6 @@ string itc_cmp_str(string str1, string str2, int num){
                 str = str + str1[p];
         }
     }
+    return str;
 }
 
