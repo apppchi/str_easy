@@ -34,9 +34,6 @@
             str1 = str1 + str[c];
         }
     }
-    else if (str == "" || str == " "){
-        return str;
-    } 
     else {
         for (int d = start; d <= end; d++){
             str1 = str1 + str[d];
