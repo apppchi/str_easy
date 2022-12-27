@@ -5,13 +5,10 @@ string itc_hello_str(string name){
 }
 
 long long itc_len(string str){
-    char c = str[0];
     int i = 0;
-    while (c != '\0'){
-        c = str[i];
+    while (str[i] != '\0'){
         i++;
     }
-    i--;
     return i;
 }
 
