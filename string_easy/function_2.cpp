@@ -34,7 +34,7 @@
             str1 = str1 + str[c];
         }
     }
-    else if (str = "" || str = " "){
+    else if (str == "" || str == " "){
         return str;
     } 
     else {
