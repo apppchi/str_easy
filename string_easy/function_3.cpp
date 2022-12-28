@@ -45,19 +45,16 @@ int itc_find_str(string str1, string str2){
     }
     return -1;
 }
-
 string itc_three_str(string str1, string str2, string str3){
     int i = itc_find_str(str1, str2);
-    int p = 0;
+    long long len1 = itc_len(str1);
+    long long len2 = itc_len(str2);
     long long len3 = itc_len(str3);
-    if (i != -1){
-        for (p = 0; p < len3; p++){
-            str1[i] = str3[p];
-            i++;
-        }
-    }
-    else {
-        return "-1";
+    while (i != -1){
+        string str = itc_slice_str(str1, 0, i - 1);
+        string str_1 = itc_slice_str(str1, i + len2, len1);
+        str1 = str + str3 + str_1;
+        i = itc_find_str(str1, str2);
     }
     return str1;
 }
