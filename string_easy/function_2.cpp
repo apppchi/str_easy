@@ -1,4 +1,4 @@
- #include "str_easy.h"
+#include "str_easy.h"
 
  string itc_even_place(string str){
     int a = itc_len(str);
@@ -30,7 +30,7 @@
         return str;
     }
     else if (end > i-1){
-        for (int c = start; c <= i; c++){
+        for (int c = start; c < i; c++){
             str1 = str1 + str[c];
         }
     }
